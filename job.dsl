@@ -1,7 +1,7 @@
 def slurper = new ConfigSlurper()
 // fix classloader problem using ConfigSlurper in job dsl
 slurper.classLoader = this.class.classLoader
-def config = slurper.parse(readFileFromWorkspace('stack.dsl'))
+def config = slurper.parse(readFileFromWorkspace('stacks.dsl'))
 
 // create job for every microservice
 config.microservices.each { name, data ->
