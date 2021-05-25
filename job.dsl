@@ -2,7 +2,7 @@ def slurper = new ConfigSlurper()
 // fix classloader problem using ConfigSlurper in job dsl
 slurper.classLoader = this.class.classLoader
 def config = slurper.parse(readFileFromWorkspace('stacks.dsl'))
-
+folder("jobs_folder1")
 // create job for every microservice
 config.microservices.each { name, data ->
   createBuildJob(name,data)
@@ -11,7 +11,7 @@ config.microservices.each { name, data ->
 
 def createBuildJob(name,data) {
   
-  freeStyleJob("${name}-build") {
+  freeStyleJob("jobs_folder1/${name}-build") {
   
     scm {
       git {
