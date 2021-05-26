@@ -12,6 +12,7 @@ freeStyleJob('jobs_folder/freestyle_child_job') {
 	  branch 'master'
               }
 
+		    }
 		steps {
 			dsl {
 			external('jobs/job_commands.groovy')
