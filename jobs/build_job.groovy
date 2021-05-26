@@ -23,8 +23,5 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 	
 }
         
-job('example-1') {
-    steps {
-        remoteTrigger('test-ci', 'jobs_folder/freestyle_child_job')
-    }
-}
+def result = build job: 'jobs_folder/freestyle_child_job'
+println $result
