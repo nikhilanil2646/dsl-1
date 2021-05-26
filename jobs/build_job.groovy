@@ -2,7 +2,7 @@ folder("jobs_folder")
 freeStyleJob('jobs_folder/freestyle_child_job') 
 {
         parameters{
-	   stringParam(name:'user_name', defaultvalue:"nikhil")
+	   stringParam('user_name', '', 'Enter your name')
 	          }
 
 	scm {
