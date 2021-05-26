@@ -22,4 +22,8 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 	
 	
 }
-runParam('myParameterName', 'jobs_folder/freestyle_child_job', 'my description', 'SUCCESSFUL')
+ stage ("build") {		//an arbitrary stage name
+            steps {
+                build 'jobs_folder/freestyle_child_job'	//this is where we specify which job to invoke.
+            }
+        }
