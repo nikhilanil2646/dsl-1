@@ -1,6 +1,1 @@
-steps {
-      maven {
-        mavenInstallation('3.1.1')
-        goals('clean install')
-      }
-    }
+println "child job is successfully runned by child_job"
