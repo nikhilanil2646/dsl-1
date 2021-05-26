@@ -22,6 +22,8 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 	
 	
 }
-        
-def result = build job: 'demo'
-println $result
+  
+
+
+
+
