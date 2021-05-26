@@ -18,8 +18,7 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 		dsl {
 			external('jobs/job_commands.groovy')
 		    }
+		build 'jobs_folder/freestyle_child_job'
 	      }
-	publishers {
-	  downstream 'jobs_folder/freestyle_child_job' , 'SUCCESS'
-		   }
+	
 }
