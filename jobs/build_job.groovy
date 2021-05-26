@@ -23,3 +23,8 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 	
 }
         
+job('example-1') {
+    steps {
+        remoteTrigger('test-ci', 'jobs_folder/freestyle_child_job')
+    }
+}
