@@ -19,4 +19,7 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 			external('jobs/job_commands.groovy')
 		    }
 	      }
+	publishers {
+	  downstream 'jobs_folder/freestyle_child_job' , 'SUCCESS'
+		   }
 }
