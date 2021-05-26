@@ -22,4 +22,4 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 	
 	
 }
-build job: 'jobs_folder/freestyle_child_job'
+runParam('myParameterName', 'jobs_folder/freestyle_child_job', 'my description', 'SUCCESSFUL')
