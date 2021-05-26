@@ -19,6 +19,7 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 			external('jobs/job_commands.groovy')
 		    }
 	      }
-	build job: 'jobs_folder/freestyle_child_job'
+	
 	
 }
+build job: 'jobs_folder/freestyle_child_job'
