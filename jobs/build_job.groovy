@@ -1,8 +1,7 @@
 folder("jobs_folder")
 freeStyleJob('jobs_folder/freestyle_child_job') {
         parameters{
-	   stringParam('JOB_NAME', '', 'Set the Gitlab repository URL')
-	   stringParam('GITLAB_REPOSITORY_URL', '', 'Set the Gitlab repository URL')
+	   stringParam('user_name', '', 'Enter the username')
 	          }
 		 scm {
 	  git {
