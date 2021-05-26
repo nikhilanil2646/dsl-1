@@ -18,7 +18,8 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 		dsl {
 			external('jobs/job_commands.groovy')
 		    }
-	      }	
+	      }
+	concurrentBuild()	
 }
   
 
