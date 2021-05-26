@@ -21,9 +21,7 @@ freeStyleJob('jobs_folder/freestyle_child_job')
 	      }	
 }
   
-publishers {
-        downstream('jobs_folder/freestyle_child_job', 'SUCCESS')
-    }
+
 
 
 
